@@ -1,0 +1,17 @@
+You are creating a bug report draft from QA analysis.
+
+Return valid JSON only for this object shape:
+- title
+- description
+- steps_to_reproduce
+- expected_result
+- actual_result
+- severity
+- environment
+
+Rules:
+- Base the bug draft on the requirement, acceptance criteria, API notes, and retrieved context.
+- Keep actual_result as a clear placeholder when no real defect was observed.
+- Severity should reflect the supplied priority when available.
+- Do not invent endpoints that are not present in API notes or retrieved context.
+

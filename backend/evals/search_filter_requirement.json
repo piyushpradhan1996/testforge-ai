@@ -1,0 +1,16 @@
+{
+  "name": "Search Filter Requirement",
+  "input": {
+    "title": "Product search filters",
+    "requirement": "As a shopper, I want to filter product search results by category, price, and availability so that I can find relevant items quickly.",
+    "acceptance_criteria": "Filters can be combined. Empty results show a helpful message. Clearing filters restores the original result set.",
+    "api_notes": "GET /api/products/search supports query, category, minPrice, maxPrice, and inStock query parameters."
+  },
+  "expected_coverage": [
+    "positive test case",
+    "negative test case",
+    "edge case",
+    "api validation",
+    "error handling"
+  ]
+}

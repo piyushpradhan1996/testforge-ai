@@ -1,0 +1,16 @@
+{
+  "name": "Payment API Requirement",
+  "input": {
+    "title": "Payment authorization",
+    "requirement": "As a shopper, I want card payments to be authorized before an order is placed so that failed payments do not create paid orders.",
+    "acceptance_criteria": "Successful authorizations create an order. Declined cards show an error. Duplicate authorization retries do not double charge.",
+    "api_notes": "POST /api/payments/authorize with cartId, paymentMethodId, and billingAddress. Returns authorizationId and orderId."
+  },
+  "expected_coverage": [
+    "positive test case",
+    "negative test case",
+    "edge case",
+    "api validation",
+    "error handling"
+  ]
+}

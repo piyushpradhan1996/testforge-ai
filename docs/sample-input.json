@@ -1,0 +1,9 @@
+{
+  "title": "Checkout discount validation",
+  "requirement": "As a shopper, I want to apply a valid discount code during checkout so that my order total is reduced.",
+  "acceptance_criteria": "Valid discount codes reduce the order total. Expired codes show an error. Discount totals are visible before payment.",
+  "api_notes": "POST /api/checkout/discount with code and cartId. Returns adjustedTotal and discountAmount.",
+  "feature_area": "Checkout",
+  "priority": "High",
+  "supporting_context": "Discount service rejects expired codes before payment and records the rejection reason for audit review."
+}

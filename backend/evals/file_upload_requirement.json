@@ -1,0 +1,16 @@
+{
+  "name": "File Upload Requirement",
+  "input": {
+    "title": "Profile document upload",
+    "requirement": "As a user, I want to upload a PDF identity document so that my profile verification can be reviewed.",
+    "acceptance_criteria": "PDF files under 5 MB upload successfully. Unsupported file types are rejected. Upload progress and failure states are visible.",
+    "api_notes": "POST /api/profile/documents accepts multipart form data with documentType and file."
+  },
+  "expected_coverage": [
+    "positive test case",
+    "negative test case",
+    "edge case",
+    "api validation",
+    "error handling"
+  ]
+}

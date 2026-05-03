@@ -1,0 +1,16 @@
+{
+  "name": "Login Requirement",
+  "input": {
+    "title": "Login authentication",
+    "requirement": "As a registered user, I want to log in with a valid email and password so that I can access my account dashboard.",
+    "acceptance_criteria": "Valid credentials open the dashboard. Invalid credentials show a generic error. Locked accounts cannot log in.",
+    "api_notes": "POST /api/auth/login with email and password. Returns accessToken and user profile on success."
+  },
+  "expected_coverage": [
+    "positive test case",
+    "negative test case",
+    "edge case",
+    "api validation",
+    "error handling"
+  ]
+}
