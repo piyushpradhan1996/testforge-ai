@@ -313,13 +313,6 @@ npm run test:e2e
 
 Run it while the backend and frontend are already running.
 
-## CV Bullet Examples
-
-**TestForge AI: LLM-Powered QA Agent with RAG + Evals | FastAPI, React, Python, LLM APIs, RAG, Pydantic, Pytest, CI-ready GitHub Actions**
-
-- Built an LLM-powered QA generation platform that converts requirements, acceptance criteria, and supporting documentation into structured test cases, edge scenarios, API checks, bug reports, and QA checklists using prompt templates, retrieval-augmented context, and schema validation.
-- Implemented a lightweight evaluation and guardrail layer covering output schema validity, duplicate test detection, missing coverage categories, hallucinated API endpoint checks, Markdown export, and CI-ready regression behavior.
-
 ## Current Limitations
 
 - RAG uses keyword overlap rather than embeddings.
