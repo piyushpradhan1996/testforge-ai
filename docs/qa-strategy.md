@@ -34,7 +34,7 @@ npm test
 npm run build
 ```
 
-CI runs the same checks in `.github/workflows/ci.yml`.
+A GitHub Actions template for these checks is included at `docs/github-actions-ci.yml`.
 
 Local browser smoke test:
 

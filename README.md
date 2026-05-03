@@ -10,7 +10,7 @@ TestForge AI is a full-stack QA/SDET portfolio project that converts requirement
 - Pydantic structured output validation for test cases, bug drafts, retrieved context, metadata, and guardrails.
 - Guardrail checks for missing sections, empty coverage categories, duplicate test titles, malformed bug drafts, and hallucinated API endpoints.
 - Evaluation harness with fixture-based scoring for coverage, schema validity, and guardrail pass/fail.
-- CI validation for backend tests, frontend tests, and frontend production build.
+- CI-ready validation template for backend tests, frontend tests, and frontend production build.
 
 ## What It Generates
 
@@ -154,7 +154,7 @@ If `AI_PROVIDER=openai` is set without `OPENAI_API_KEY`, the app falls back to m
 | RAG | Local chunking and keyword-overlap retrieval |
 | Backend tests | Pytest, FastAPI TestClient |
 | Frontend tests | Vitest, React Testing Library, jsdom |
-| CI/CD | GitHub Actions |
+| CI/CD | GitHub Actions-ready workflow template |
 | Export | Markdown |
 
 ## API Endpoints
@@ -288,13 +288,15 @@ testforge-ai/
 |   `-- src/
 |-- docs/
 |   |-- screenshots/
-|-- .github/workflows/ci.yml
+|-- docs/github-actions-ci.yml
 `-- README.md
 ```
 
-## CI Validation
+## CI Template
 
-GitHub Actions runs:
+A GitHub Actions workflow template is included at [docs/github-actions-ci.yml](docs/github-actions-ci.yml). Copy it to `.github/workflows/ci.yml` once your GitHub token or app has workflow permission.
+
+The workflow runs:
 
 - Backend dependency install
 - `pytest`
@@ -313,10 +315,10 @@ Run it while the backend and frontend are already running.
 
 ## CV Bullet Examples
 
-**TestForge AI: LLM-Powered QA Agent with RAG + Evals | FastAPI, React, Python, LLM APIs, RAG, Pydantic, Pytest, GitHub Actions**
+**TestForge AI: LLM-Powered QA Agent with RAG + Evals | FastAPI, React, Python, LLM APIs, RAG, Pydantic, Pytest, CI-ready GitHub Actions**
 
 - Built an LLM-powered QA generation platform that converts requirements, acceptance criteria, and supporting documentation into structured test cases, edge scenarios, API checks, bug reports, and QA checklists using prompt templates, retrieval-augmented context, and schema validation.
-- Implemented a lightweight evaluation and guardrail layer covering output schema validity, duplicate test detection, missing coverage categories, hallucinated API endpoint checks, Markdown export, and CI-tested regression behavior.
+- Implemented a lightweight evaluation and guardrail layer covering output schema validity, duplicate test detection, missing coverage categories, hallucinated API endpoint checks, Markdown export, and CI-ready regression behavior.
 
 ## Current Limitations
 
